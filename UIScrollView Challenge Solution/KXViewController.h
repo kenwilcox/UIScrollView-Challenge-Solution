@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KXViewController : UIViewController
+@interface KXViewController : UIViewController <UIScrollViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) UIImageView *globalImageView;
 
 @end
