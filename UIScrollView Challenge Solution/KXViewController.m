@@ -19,9 +19,9 @@
   [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
   
-  self.globalImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"world-map.jpg"]];
-  self.scrollView.contentSize = self.globalImageView.frame.size;
-  [self.scrollView addSubview:self.globalImageView];
+  self.globeImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"world-map.jpg"]];
+  self.scrollView.contentSize = self.globeImageView.frame.size;
+  [self.scrollView addSubview:self.globeImageView];
   
   self.scrollView.delegate = self;
   self.scrollView.maximumZoomScale = 1.5;
@@ -36,7 +36,7 @@
 
 -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
-  return self.globalImageView;
+  return self.globeImageView;
 }
 
 @end

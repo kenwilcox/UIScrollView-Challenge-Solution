@@ -11,6 +11,6 @@
 @interface KXViewController : UIViewController <UIScrollViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (strong, nonatomic) UIImageView *globalImageView;
+@property (strong, nonatomic) UIImageView *globeImageView;
 
 @end
